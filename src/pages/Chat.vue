@@ -55,7 +55,7 @@ const name = ref('')
 export default {
   setup () {
     const $store = useStore()
-    const socket = io('https://faqat-sen-va-men-uchun.vercel.app/')
+    const socket = io('http://' + webkitURL)
     
     const message = ref('')
     name.value = $store.state.name,
